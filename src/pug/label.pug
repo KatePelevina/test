@@ -1,0 +1,31 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main.container
+    .single-product
+      .single-product__photo
+        img(src="img/label.png", alt="alt")
+      .single-product__content
+        .single-product__content-titles
+          h1.single-product__content-title Термоэтикетка
+          p.single-product__content-title Под заказ: любые параметры
+        
+
+    h2.title Похожие товары
+    div.product__items.container
+      a.product__item(href="scotch-color.html") 
+        img.product__item-image(src="img/scotch-color.png", alt="alt")
+        h3.product__item-title Скотч цветной
+        p.product__item-text 
+      a.product__item(href="scotch-logo.html")  
+        img.product__item-image(src="img/scotch-logo.png", alt="alt")
+        h3.product__item-title Скотч с логотипом
+        p.product__item-text 
+      a.product__item(href="scotch-transparent.html")
+        img.product__item-image(src="img/scotch-transparent.png", alt="alt")
+        h3.product__item-title Скотч прозрачный
+        p.product__item-text
+
+  include chunk/footer

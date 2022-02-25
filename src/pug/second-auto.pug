@@ -1,0 +1,36 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main.container
+    .single-product
+      .single-product__photo
+        img(src="img/second-auto.png", alt="alt")
+      .single-product__content
+        .single-product__content-titles
+          h1.single-product__content-title Вторичная | Машинная
+          h3.single-product__content-title  Cтрейч пленка 
+        .single-product__content-texts
+          p.single-product__content-text Вторичная стрейч пленка производится из переработанных отходов стрейч пленки
+          p.single-product__content-text Подходит для защиты оборудования и стройматериалов от сырости и дождя
+          p.single-product__content-text Используется для машинной упаковки 
+          p.single-product__content-text Толщина: от 15 до 35 мкр
+
+
+    h2.title Похожие товары
+    div.product__items
+      a.product__item(href="first-hand.html") 
+        img.product__item-image(src="img/first-hand.png", alt="alt")
+        h3.product__item-title Первичная | Ручная 
+        p.product__item-text Cтрейч пленка
+      a.product__item(href="second-hand.html")  
+        img.product__item-image(src="img/second-hand.png", alt="alt")
+        h3.product__item-title Вторичная | Ручная
+        p.product__item-text Cтрейч пленка
+      a.product__item(href="first-auto.html")
+        img.product__item-image(src="img/first-auto.png", alt="alt")
+        h3.product__item-title Первичная | Машинная
+        p.product__item-text Cтрейч пленка
+
+  include chunk/footer

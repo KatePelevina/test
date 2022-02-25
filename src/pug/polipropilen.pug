@@ -1,0 +1,35 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main.container
+    .single-product
+      .single-product__photo
+        img(src="img/polipropilen.png", alt="alt")
+      .single-product__content
+        .single-product__content-titles
+          h1.single-product__content-title Полипропиленовая лента (ПП)
+        .single-product__content-texts
+          p.single-product__content-text Считается одним из самых простых, легких и удобных материалов для упаковки
+          p.single-product__content-text Этот тип лент используется для стяжки, обвязки, упаковки и крепления
+          p.single-product__content-text Ширина: от 12 мм до 19 мм
+          p.single-product__content-text Толщина: от 0,5 мм до 2 мм
+    
+    
+    h2.title Похожие товары
+    div.product__items
+      a.product__item(href="poliestr.html") 
+        img.product__item-image(src="img/poliestr.png", alt="alt")
+        h3.product__ite-_title Полиэстеровая лента (ПЭТ)
+        p.product__item-text 
+      a.product__item(href="scotch-color.html")  
+        img.product__item-image(src="img/scotch-color.png", alt="alt")
+        h3.product__item-title Скотч цветной
+        p.product__item-text 
+      a.product__item(href="scotch-transparent.html")
+        img.product__item-image(src="img/scotch-transparent.png", alt="alt")
+        h3.product__item-title Скотч прозрачный
+        p.product__item-text
+
+  include chunk/footer

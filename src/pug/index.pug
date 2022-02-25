@@ -1,0 +1,62 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main 
+    section.single-item
+      .main-page.first-page
+        .first-page__content
+          h1.main-page__title ПромПак
+          p.main-page__text Производство и продажа упаковочных материалов
+      .main-page.second-page
+        .first-page__content
+          h1.main-page__title Стретч пленка
+          p.main-page__text Первичная и вторичная для ручной и машинной упаковки
+
+    section.product.container
+      h2.title Популярные товары
+      .product__items
+        a.product__item(href="first-hand.html")
+          img.product__item-image(src="img/first-hand.png", alt="alt")
+          h4.product__item-title Первичная | Ручная
+          p.product__item-text стрейч пленка 
+        a.product__item(href="first-auto.html")
+          img.product__item-image(src="img/first-auto.png", alt="alt")
+          h4.product__item-title Первичная | Машинная 
+          p.product__item-text стрейч пленка 
+        a.product__item(href="second-hand.html")
+          img.product__item-image(src="img/second-hand.png", alt="alt")
+          h4.product__item-title Вторичная | Ручная 
+          p.product__item-text стрейч пленка 
+        a.product__item(href="second-auto.html")
+          img.product__item-image(src="img/second-auto.png", alt="alt")
+          h4.product__item-title Вторичная | Машинная
+          p.product__item-text стрейч пленка 
+    
+    section.promo
+      .promo__content.container
+        .promo__content-text
+          h2 Мы принимаем материалы на переработку
+        .promo__content-btn
+          a.btn(href="buy.html") Подробнее
+    
+    section.about.container
+      h2.title Почему выбирают нас
+      .about__items
+        .about__item
+          img.about__item-img(src="img/box.svg", alt="alt")
+          h3.about__item-text Собственное производство
+        .about__item
+          img.about__item-img(src="img/clock.svg", alt="alt")
+          h3.about__item-text Оперативная доставка
+        .about__item
+          img.about__item-img(src="img/truck.svg", alt="alt")
+          h3.about__item-text Доставка по всей России 
+
+    //- .index-form
+    //-   <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script>
+    //-   <iframe src="https://forms.yandex.ru/cloud/61e35e85426266824783c15c/?iframe=1" frameborder="0" name="ya-form-61e35e85426266824783c15c" width="650"></iframe>
+ 
+
+  include chunk/footer

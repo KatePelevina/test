@@ -1,0 +1,35 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main.container
+    .single-product
+      .single-product__photo
+        img(src="img/poliestr.png", alt="alt")
+      .single-product__content
+        .single-product__content-titles
+          h1.single-product__content-title Полиэстеровая лента (ПЭТ)
+        .single-product__content-texts
+          p.single-product__content-text Применяется для обвязки тяжеловесных грузов
+          p.single-product__content-text Является одним из самых надежных и востребованных упаковочных материалов
+          p.single-product__content-text Ширина: от 12 мм до 19 мм
+          p.single-product__content-text Толщина: от 0,5 мм до 2 мм
+
+    
+    h2.title Похожие товары
+    div.product__items
+      a.product__item(href="polipropilen.html") 
+        img.product__item-image(src="img/polipropilen.png", alt="alt")
+        h3.product__ite-_title Полипропиленовая лента
+        p.product__item-text 
+      a.product__item(href="scotch-color.html")  
+        img.product__item-image(src="img/scotch-color.png", alt="alt")
+        h3.product__item-title Скотч цветной
+        p.product__item-text 
+      a.product__item(href="scotch-transparent.html")
+        img.product__item-image(src="img/scotch-transparent.png", alt="alt")
+        h3.product__item-title Скотч прозрачный
+        p.product__item-text
+
+  include chunk/footer

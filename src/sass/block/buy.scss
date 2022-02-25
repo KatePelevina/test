@@ -1,0 +1,42 @@
+.buy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &-box {
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        width: 30%;
+        text-align: center;
+        &__img {
+            width: 200px;
+            height: 200px;
+            margin: 30px 0;
+        }
+        &__text {
+            background-color: #156CEC;
+            padding: 30px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 965px) {
+    .buy {
+        display: block;
+        &-box {    
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .buy {
+        &-box {
+            width: 90%;
+        }
+    }
+}

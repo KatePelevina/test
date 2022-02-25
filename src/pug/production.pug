@@ -1,0 +1,15 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main
+    section.container
+      h1.title Наше производство 
+      div.single-item.slider
+        img.single-item__img(src="img/production-1.jpg", alt="alt")
+        img.single-item__img(src="img/production-2.jpg", alt="alt")
+        img.single-item__img(src="img/production-3.jpg", alt="alt")
+        img.single-item__img(src="img/production-4.jpg", alt="alt")
+
+  include chunk/footer

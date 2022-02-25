@@ -1,0 +1,27 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main
+  
+    h1.title Контакты
+
+    //- section.contact
+    //-   h1.title Контакты
+    //-   .contact__form
+    //-     input(type="text" placeholder="Имя")
+    //-     input(type="text" placeholder="Телефон")
+    //-     input(type="email" placeholder="Email")
+    //-     input(type="textarea" placeholder="Сообщение")
+    //-     a.btn.contac-btn(href="#") Отправить
+  
+    .contact-page.container
+      .contact-page__map  
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6b7dd5b3adf79884654efc4965e2e17f052b33f3b6725e6a657bdc5ca8cf8f4f&amp;width=300&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+      .contact-page__form
+        <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script>
+        <iframe src="https://forms.yandex.ru/cloud/61e35e85426266824783c15c/?iframe=1" frameborder="0" name="ya-form-61e35e85426266824783c15c" width="650"></iframe>
+ 
+
+  include chunk/footer

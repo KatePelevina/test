@@ -1,0 +1,34 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main.container
+    .single-product
+      .single-product__photo
+        img(src="img/scotch-logo.png", alt="alt")
+      .single-product__content
+        .single-product__content-titles
+          h1.single-product__content-title Cкотч с логотипом
+        .single-product__content-texts
+          p.single-product__content-text Ширина: 48 мм, 50 мм
+          p.single-product__content-text от 10 мм до 160 мм
+          p.single-product__content-text Клеевая основа: 38/40/43/45/47/50 мкр
+       
+
+    h2.title Похожие товары
+    div.product__items
+      a.product__item(href="label.html") 
+        img.product__item-image(src="img/label.png", alt="alt")
+        h3.product__item-title Термоэтикетка
+        p.product__item-text 
+      a.product__item(href="scotch-color.html")  
+        img.product__item-image(src="img/scotch-color.png", alt="alt")
+        h3.product__ite-_title Скотч цветной
+        p.product__item-text 
+      a.product__item(href="scotch-transparent.html")
+        img.product__item-image(src="img/scotch-transparent.png", alt="alt")
+        h3.product__item-title Скотч прозрачный
+        p.product__item-text
+
+  include chunk/footer

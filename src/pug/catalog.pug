@@ -1,0 +1,74 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main.container
+    section.catalog
+    h2.title Каталог
+    .product__items
+      a.product__item(href="first-hand.html")
+        img.product__item-image(src="img/first-hand.png", alt="alt")
+        h3.product__item-title Первичная | Ручная
+        p.product__item-text Стрейч пленка
+      a.product__item(href="first-auto.html")
+        img.product__item-image(src="img/first-auto.png", alt="alt")
+        h3.product__item-title Первичная | Машинная
+        p.product__item-text Стрейч пленка
+    .product__items
+      a.product__item(href="second-hand.html") 
+        img.product__item-image(src="img/second-hand.png", alt="alt")
+        h3.product__item-title Вторичная | Ручная
+        p.product__item-text Стрейч пленка
+      a.product__item(href="second-auto.html")
+        img.product__item-image(src="img/second-auto.png", alt="alt")
+        h3.product__item-title Вторичная | Машинная
+        p.product__item-text Стрейч пленка
+    .product__items
+      a.product__item(href="thermo.html") 
+        img.product__item-image(src="img/termo.png", alt="alt")
+        h3.product__item-title Термоусадочная пленка
+        p.product__item-text 
+      a.product__item(href="pvd.html") 
+        img.product__item-image(src="img/pvd.png", alt="alt")
+        h3.product__item-title Пленка ПВД
+        p.product__item-text 
+    .product__items
+      a.product__item(href="pnd.html") 
+        img.product__item-image(src="img/pnd.png", alt="alt")
+        h3.product__item-title Пленка ПНД
+        p.product__item-text 
+      a.product__item(href="bubble.html") 
+        img.product__item-image(src="img/bubble.png", alt="alt")
+        h3.product__item-title Воздушно пузырчатая пленка
+        p.product__item-text 
+    .product__items
+      a.product__item(href="label.html") 
+        img.product__item-image(src="img/label.png", alt="alt")
+        h3.product__item-title Термоэтикетка
+        p.product__item-text 
+      a.product__item(href="scotch-transparent.html")  
+        img.product__item-image(src="img/scotch-transparent.png", alt="alt")
+        h3.product__item-title Cкотч прозрачный
+        p.product__item-text 
+    .product__items
+      a.product__item(href="scotch-color.html")
+        img.product__item-image(src="img/scotch-color.png", alt="alt")
+        h3.product__item-title Cкотч цветной
+        p.product__item-text  
+      a.product__item(href="scotch-logo.html")
+        img.product__item-image(src="img/scotch-logo.png", alt="alt")
+        h3.product__item-title Cкотч с логотипом
+        p.product__item-text 
+    .product__items
+      a.product__item(href="poliestr.html")
+        img.product__item-image(src="img/poliestr.png", alt="alt")
+        h3.product__item-title Cтреппинглента
+        p.product__item-text Полиэстеровая лента
+      a.product__item(href="polipropilen.html")
+        img.product__item-image(src="img/polipropilen.png", alt="alt")
+        h3.product__item-title Cтреппинглента
+        p.product__item-text Полипропиленовая лента
+
+
+  include chunk/footer

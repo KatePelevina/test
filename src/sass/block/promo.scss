@@ -1,0 +1,48 @@
+.promo {
+    margin-top: 100px;
+    background-color: #F0F4F8;
+    padding: 100px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            margin-right: 50px;
+            color: #1D5CB4;
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .promo {
+        padding: 50px;
+        &__content {
+            display: block;
+            text-align: center;
+            &-text {
+                margin-bottom: 50px;
+            }
+            h2 {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+// @media (max-width: 660px) {
+//     .promo {
+//         h2 {
+//             font-size: 50px;
+//         }
+//     }
+// }
+
+@media (max-width: 576px) {
+    .promo {
+        padding: 20px;
+        h2 {
+            font-size: 23px;
+        }
+    }
+}

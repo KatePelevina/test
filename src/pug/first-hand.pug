@@ -1,0 +1,37 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main.container
+    .single-product
+      .single-product__photo
+        img(src="img/first-auto.png", alt="alt")
+      .single-product__content
+        .single-product__content-titles
+          h1.single-product__title Первичная | Ручная
+          h3.single-product__title Cтрейч пленка
+        .single-product__content-texts
+          p.single-product__content-text Материал, который можно использовать ручной упаковки
+          p.single-product__content-text Толщина: от 12 до 35 мкр
+          p.single-product__content-text Ширина стандартная: 500 мм 
+          p.single-product__content-text Ширина под заказ: 100 мм, 125 мм, 250 мм, 450 мм
+
+
+    
+    h2.title Похожие товары
+    div.product__items
+      a.product__item(href="first-auto.html") 
+        img.product__item-image(src="img/first-auto.png", alt="alt")
+        h3.product__item-title Первичная | Машинная 
+        p.product__item-text Cтрейч пленка
+      a.product__item(href="second-hand.html")  
+        img.product__item-image(src="img/second-hand.png", alt="alt")
+        h3.product__item-title Вторичная | Ручная
+        p.product__item-text Cтрейч пленка
+      a.product__item(href="second-auto.html")
+        img.product__item-image(src="img/second-auto.png", alt="alt")
+        h3.product__item-title Вторичная | Машинная 
+        p.product__item-text Cтрейч пленка
+
+  include chunk/footer

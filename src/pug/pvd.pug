@@ -1,0 +1,37 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main.container
+    .single-product
+      .single-product__photo
+        img(src="img/pvd.png", alt="alt")
+      .single-product__content
+        .single-product__content-titles
+          h1.single-product__content-title Пленка ПВД
+        .single-product__content-texts
+          p.single-product__content-text Высокая гибкость, эластичность и растяжимость
+          p.single-product__content-text Водонепроницаемость
+          p.single-product__content-text Прочность на разрыв, сохраняет прочность при очень низких температурах -60/-70°С
+          p.single-product__content-text Устойчивость к химическим воздействиям
+          p.single-product__content-text Долговечность
+          p.single-product__content-text Защита от проникновения влаги, запахов и грязи
+          p.single-product__content-text Безопасность применения и нетоксичность
+
+    h2.title Похожие товары
+    div.product__items
+      a.product__item(href="pnd.html") 
+        img.product__item-image(src="img/pnd.png", alt="alt")
+        h3.product__item-title Пленка ПНД
+        p.product__item-text 
+      a.product__item(href="thermo.html")  
+        img.product__item-image(src="img/termo.png", alt="alt")
+        h3.product__item-title Термоусадочная пленка
+        p.product__item-text 
+      a.product__item(href="bubble.html")
+        img.product__item-image(src="img/bubble.png", alt="alt")
+        h3.product__item-title Воздушно пузырчатая
+        p.product__item-text
+
+  include chunk/footer

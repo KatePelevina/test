@@ -1,0 +1,195 @@
+
+.header__logo-mini {
+    // width: 50px;
+    // margin: 0 auto;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+.header {
+    // background: linear-gradient(90deg, #1D5CB4 0%, #156CEC 100%);
+    &-top {
+        background: linear-gradient(90deg, #1D5CB4 0%, #156CEC 100%);
+        color: #fff;
+        padding: 15px;
+        text-transform: uppercase;
+        &__nav {
+            &-items {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+        a {
+            color: #fff; 
+        } 
+ 
+    }
+    &-bottom {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        &__items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            &-item + &-item {
+                margin-left: 15px;
+            }
+        }
+        &__item {
+            display: flex;
+            border: 1px solid #ccc;
+            color: rgb(39, 39, 39);
+            border-radius: 10px;
+            padding: 20px;
+            // width: 22vw;
+            font-size: 0.8rem;
+            align-items: center;
+            &-title {
+                margin-bottom: 10px;
+            }
+            &-text {
+                font-weight: bold;
+            }
+            &-img {
+                margin-right: 20px;
+                background-color: #F0F4F8;
+                border-radius: 10px;
+                padding: 10px;
+            }
+        }
+        &__item + &__item {
+            margin-left: 15px;
+        }
+        &__logo-img {
+            width: 200px;
+        }
+    }
+}
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 965px) {
+    .header {
+        &-bottom {
+            &__item {
+                padding: 10px;
+            }
+            &__logo-img {
+                width: 100px; 
+            }
+        }
+    }
+}
+
+// @media (max-width: 773px) {
+//     .header-bottom {
+//         display: block;
+//     }
+//     .header__logo-img {
+//         width: 100px;
+//     }
+// }
+
+@media (max-width: 576px) {
+    
+    .header {
+        background: linear-gradient(90deg, #1D5CB4 0%, #156CEC 100%);
+        &-top {
+            background: #fff;
+            &__nav {
+                &-items {
+                    display: none;
+                }
+            }
+        } 
+        margin-bottom: 50px;
+    }
+    .index {
+        margin-bottom: 0px;
+    }
+    
+    
+
+    .menu.active {
+        background: linear-gradient(90deg, #1D5CB4 0%, #156CEC 100%);
+        .header-top__nav-items {
+            display: block;
+            text-align: center;
+        }
+        .header-top__nav-item {
+            margin-bottom: 20px;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    /* Гамбургер иконка */
+    .menu-btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+        margin-left: 90vw;
+    }
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        transition: all 0.5s;
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+
+    /* Меняем гамбургер иконку, когда меню открыто */
+    .menu-btn.active span:nth-of-type(1) {
+    display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+    }
+    .menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+    }
+
+    .header-bottom__item-img {
+        display: none;
+    }
+    .header-bottom__items {
+        display: block;
+    }
+    .header-bottom__item + .header-bottom__item {
+        margin-left: 0px;
+    }
+    .header-bottom__item {
+        border: none;
+        padding: 5px;
+    }
+    .header-bottom__item-title {
+        margin-bottom: 3px;
+    }
+    .header-bottom__logo-img {
+        width: 150px;
+    }
+    
+}
+
+

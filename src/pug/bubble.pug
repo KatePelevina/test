@@ -1,0 +1,38 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  main.main.container
+    .single-product
+      .single-product__photo
+        img(src="img/bubble.png", alt="alt")
+      .single-product__content
+        .single-product__content-titles
+          h1.single-product__content-title Воздушно пузырчатая пленка
+        .single-product__content-texts
+          p.single-product__content-text Плотность: 1 / 2 / 3 слоя
+          p.single-product__content-text Толщина: от 35 до 150 мкр
+          p.single-product__content-text Водонепроницаемость и пыленепроницаемость
+          p.single-product__content-text Высокая прочность при механических воздействиях
+          p.single-product__content-text Высокая теплоизоляция
+          p.single-product__content-text Хорошая устойчивость при растяжении
+          p.single-product__content-text Имеет значительное электрическое сопротивление
+
+    h2.title Похожие товары
+    div.product__items
+      a.product__item.card(href="pnd.html") 
+        img.product__item-image(src="img/pnd.png", alt="alt")
+        h3.product__item-title Пленка ПНД
+        p.product__item-text 
+      a.product__item.card(href="pvd.html")  
+        img.product__item-image(src="img/pvd.png", alt="alt")
+        h3.product__item-title Пленка ПВД
+        p.product__item-text 
+      a.product__item.card(href="thermo.html")  
+        img.product__item-image(src="img/termo.png", alt="alt")
+        h3.product__item-title Термоусадочная пленка
+        p.product__item-text 
+
+
+  include chunk/footer
